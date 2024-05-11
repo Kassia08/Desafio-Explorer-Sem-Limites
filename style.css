@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+
+:root {
+    font-size: 62,5%;
+
+    --color-base-white: #FFFFFF;
+    --color-base-gray-100: #f9f4fb;
+    --color-base-blue-100: #343193;
+    --color-base-blue-200: #312D64;
+    --color-base-blue-300: #302c63;  
+    --color-base-pink: #B52184;
+}
+
+body, header, main,
+fieldset, footer,
+button, input, 
+textarea {
+    font-family: "Mulish", sans-serif;
+}
+
+.app {
+    max-width: 43.rem;
+    margin: 0 auto;
+}
+
+body {
+    background-color: var(--color-base-gray-100);
+}
+
+header {  
+    height: 67.9rem;
+
+    padding: 0 3.4rem 9.3rem 3.2rem;
+}
+
+header .astronaut img {
+   width: 50%;
+}
+
+header h1 {
+    color: var(--color-base-pink);
+
+    font-size: 3.2rem;
+    font-weight: 900;
+    line-height: 4rem;
+
+    text-align: center;
+    margin: 1.7rem 0 0.5rem 0;
+}
+
+header p {
+    color: var(--color-base-blue-200);
+
+    font-size: 2.rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+header .text .arrow img {
+    width: 5.8rem;
+    height: 10.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto;
+    transition: filter 300ms;
+
+}
+
+header .text .arrow img:hover {
+    filter: brightness(0.7);
+}
+
+header .text .arrow img {
+    width: 3rem;
+}
+main{
+    display: grid;
+
+    padding: 5.3rem 3.9rem 5.3rem;
+    gap: 4.9rem;
+
+    background-color: var(--color-base-blue-300);
+}
+
+main h1{
+    color: var(--color-base-pink);
+    font-size: 2.9rem;
+    font-weight: 900;
+    line-height: 3.6rem;
+    margin-bottom: 2rem;
+
+    width: 26.5rem;
+}
+
+main p {
+    color: var(--color-base-blue-200);
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2rem;
+
+    width: 26.5rem;
+}
+
+.card {
+    background-color: var(--color-base-white);
+
+    border-radius: 2rem;
+    padding: 2.6rem;
+}
+
+.card img {
+    width: 8rem;
+    margin-bottom: 3.3rem;
+}
+
+
+fieldset {
+    background-color: var(--color-base-gray-100);
+
+    padding: 7.8rem 3.9rem 6.5rem;
+}
+
+fieldset legend {
+    color: var(--color-base-pink);
+    font-size: 3.2rem;
+    font-weight: 900;
+    line-height: 4rem;
+
+    margin-bottom: 4.3rem;
+}
+
+.input-wrapper {
+    margin-bottom: 2.4rem;
+}
+
+.input-wrapper input,
+.input-wrapper textarea { 
+    width: 100vh;
+
+    font-weight: 600;
+    font-size: 1.6rem;
+
+    color: var(--color-base-blue-200);
+
+    padding: 1.2rem 1.6rem 1.6rem;
+    border-radius: 1.6rem;
+
+    border: .15rem solid var(--color-base-blue-200);
+}
+
+.input-wrapper textarea {
+    height: 12.6rem;
+}
+
+.input-wrapper input::placeholder,
+.input-wrapper textarea::placeholder {
+    color: var(--color-base-blue-200);
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.input-wrapper input::placeholder {
+    padding-left: 2.8rem;
+}
+
+fieldset button {
+    background-color: var(--color-base-blue-300);
+
+    color: var(--color-base-white);
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+
+    padding: 1.6rem 1.6rem;
+    border-radius: 1.6rem;
+
+    cursor: pointer;
+    transition: filter 200ms;
+}
+
+fieldset button:hover {
+    filter: brightness(0.9);
+}
+
+#name {
+    background: url(./imagens/person.svg) no-repeat scroll 1.4rem 1.2rem;
+}
+
+#email {
+    background: url(./imagens/arroba.svg) no-repeat scroll 1.4rem 1.2rem;
+}
+
+.input-wrapper input,
+.input-wrapper textarea ,
+button, fieldset {
+    border: none;
+    background: none;
+}
+
+footer {
+    background-color: var(--color-base-blue-300);
+
+    width: 100vh;
+    padding: 3.2rem 1.6rem;
+
+}
+
+footer p {
+    color: var(--color-base-white);
+    font-size: 2.rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    text-align: center;
+}
+
+@media (min-width: 700px) {
+    .app {
+        max-width: 144.rem;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+
+        padding: 0 2.9rem 10.3rem 10.9rem;
+
+        max-height: 83.6rem;
+    }
+
+    header .astronaut img {
+        width: 50%;
+    }
+
+    header h1 {
+        font-size: 5.8rem;
+        line-height: 7.3rem;
+    }
+
+    header p {
+        font-size: 3.2rem;
+        line-height: 4rem;
+        margin-bottom: 17.9rem;
+    }
+
+    header .text {
+        order: 1;
+        margin-top: 31.2rem;
+    }
+
+    header .text .arrow {
+        margin: 0;
+
+        justify-self: flex-end;
+    }
+
+    header .astronaut {
+        order: 2;
+    }
+
+    main {
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 1;
+
+        gap: 6rem;
+
+        padding: 6.4rem 11.1rem 8rem;
+
+        max-height: 57.6rem;
+    }
+
+    main h1 {
+        width: 27.9rem;
+    }
+
+    main p {
+        width: 32,1rem;
+    }
+
+    .card {
+        padding: 3.2rem;
+        border-radius: 2.4rem;
+    }
+
+    .card img {
+        max-width: 9.7rem;
+        margin-bottom: 4rem;
+    }
+
+    fieldset {
+        display: flex;
+        align-items: center;
+        gap: 9.2rem;
+
+        padding: 0;
+        height: 62.2rem;
+        margin: 0 auto;
+
+        background: url(./imagens/estrelas.svg) no-repeat;
+        background-position: right;
+
+        max-height: 61.2rem;
+    }
+
+    .fieldset-wrapper {
+       flex: 1;
+       margin-left: 10.9rem; 
+    }
+
+    .fieldset-wrapper .stars {
+        flex: 1;
+    }
+
+    footer {
+        max-height: 7.8rem;
+    }
+}
