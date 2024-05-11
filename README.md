@@ -42,4 +42,3 @@ Feito com ♥ by Rocketseat :wave: [Participe da nossa comunidade!] (https://dis
 Esse projeto foi realizado pela aluna Kássia Almeida Moura em 2024.
 
 # Desafio-Explore-sem-limites
-# Desafio-Explorer-Sem-Limites
