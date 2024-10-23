@@ -20,6 +20,11 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - HTML e CSS
 - Git e Github
 - Figma
+- Grid
+- Animação
+- @media
+- @Keyframe
+- Mobile First
 
 ## 💻 Projeto
 
@@ -41,5 +46,4 @@ Feito com ♥ by Rocketseat :wave: [Participe da nossa comunidade!] (https://dis
 
 Esse projeto foi realizado pela aluna Kássia Almeida Moura em 2024.
 
-# Desafio-Explore-sem-limites
-# Desafio-Explorer-Sem-Limites
+
