@@ -26,19 +26,12 @@ textarea {
 }
 
 .app {
-   /* max-width: 43rem;  */
     margin: 0 auto;
 }
 
 body {
     background-color: var(--color-base-gray-100);
 }
-
-*/*header {  
-    height: 67.9rem;
-
-    padding: 0 3.4rem 9.3rem 3.2rem;
-} */
 
 header .astronaut img {
    width: 100%;
@@ -84,11 +77,6 @@ header .text .arrow img:hover {
     filter: brightness(0.7);
 }
 
-/* header .text .arrow img {
-    width: 3rem;
-} */
-
-
 main{
     display: grid;
 
@@ -108,8 +96,6 @@ main h1{
     font-weight: 900;
     line-height: 3.6rem;
     margin-bottom: 2rem;
-
-    /* width: 26.5rem; */
 }
 
 main p {
@@ -117,8 +103,6 @@ main p {
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 2rem;
-
-   /* width: 26.5rem; */
 }
 
 .card {
@@ -155,8 +139,6 @@ fieldset legend {
 
 .input-wrapper input,
 .input-wrapper textarea { 
-    /* width: 100vh; */
-
     font-weight: 600;
     font-size: 1.6rem;
 
@@ -220,7 +202,6 @@ button, fieldset {
 footer {
     background-color: var(--color-base-blue-300);
 
-    /* width: 100vh; */
     padding: 3.2rem 1.6rem;
 
 }
@@ -244,8 +225,6 @@ footer p {
         align-items: center;
 
         padding: 0 0 10.3rem 10.9rem;
-
-       /*  max-height: 83.6rem; */
     }
 
     header .astronaut {
@@ -264,42 +243,16 @@ footer p {
     header p {
         font-size: 3.2rem;
         line-height: 4rem;
-      /*  margin-bottom: 17.9rem; */
     }
-
-    /* header .text {
-        order: 1;
-        margin-top: 31.2rem;
-    } */
 
     header .text .arrow img {
         margin: 0;
-
-       /* justify-self: flex-end; */
     }
-
-    /* header .astronaut {
-        order: 2;
-    } */
 
     main {
         grid-template-columns: repeat(3,1fr);
-       /*  grid-template-rows: 1; */
-
         gap: 6rem;
-
-        /* padding: 6.4rem 11.1rem 8rem;
-
-        max-height: 57.6rem; */
     }
-
-    /* main h1 {
-        width: 27.9rem;
-    } */
-
-    /* main p {
-        width: 32,1rem;
-    } */
 
     .card {
         padding: 3.2rem;
