@@ -8,7 +8,7 @@
 }
 
 :root {
-    font-size: 62,5%;
+    font-size: 62.5%;
 
     --color-base-white: #FFFFFF;
     --color-base-gray-100: #f9f4fb;
@@ -26,7 +26,7 @@ textarea {
 }
 
 .app {
-    max-width: 43.rem;
+    /* max-width: 43rem; */
     margin: 0 auto;
 }
 
@@ -35,9 +35,9 @@ body {
 }
 
 header {  
-    height: 67.9rem;
+    /* height: 67.9rem; */
 
-    padding: 0 3.4rem 9.3rem 3.2rem;
+    /* padding: 0 3.4rem 9.3rem 3.2rem; */
 }
 
 header .astronaut img {
@@ -58,7 +58,7 @@ header h1 {
 header p {
     color: var(--color-base-blue-200);
 
-    font-size: 2.rem;
+    font-size: 2rem;
     font-weight: 600;
     line-height: 2.5rem;
 
@@ -83,10 +83,12 @@ header .text .arrow img:hover {
     filter: brightness(0.7);
 }
 
-header .text .arrow img {
+/* header .text .arrow img {
     width: 3rem;
-}
+} */
+
 main{
+    margin-top: 9rem;
     display: grid;
 
     padding: 5.3rem 3.9rem 5.3rem;
@@ -102,7 +104,7 @@ main h1{
     line-height: 3.6rem;
     margin-bottom: 2rem;
 
-    width: 26.5rem;
+    /* width: 26.5rem; */
 }
 
 main p {
@@ -111,7 +113,7 @@ main p {
     font-weight: 600;
     line-height: 2rem;
 
-    width: 26.5rem;
+    /* width: 26.5rem; */
 }
 
 .card {
@@ -148,7 +150,7 @@ fieldset legend {
 
 .input-wrapper input,
 .input-wrapper textarea { 
-    width: 100vh;
+    /* width: 100vh; */
 
     font-weight: 600;
     font-size: 1.6rem;
@@ -213,7 +215,7 @@ button, fieldset {
 footer {
     background-color: var(--color-base-blue-300);
 
-    width: 100vh;
+    /* width: 100vh; */
     padding: 3.2rem 1.6rem;
 
 }
@@ -228,20 +230,26 @@ footer p {
 
 @media (min-width: 700px) {
     .app {
-        max-width: 144.rem;
+        max-width: 144rem;
     }
 
     header {
         display: flex;
-        justify-content: space-between;
+        flex-direction: row-reverse;
+        align-items: center;
+        /* justify-content: space-between; */
 
-        padding: 0 2.9rem 10.3rem 10.9rem;
+        padding: 0 0 10.3rem 10.9rem;
 
-        max-height: 83.6rem;
+        /* max-height: 83.6rem; */
+    }
+    
+    header .astronaut {
+        flex-grow: 1;
     }
 
     header .astronaut img {
-        width: 50%;
+        width: 90%;
     }
 
     header h1 {
@@ -252,41 +260,41 @@ footer p {
     header p {
         font-size: 3.2rem;
         line-height: 4rem;
-        margin-bottom: 17.9rem;
+       /* margin-bottom: 17.9rem; */
     }
 
     header .text {
-        order: 1;
-        margin-top: 31.2rem;
+       /* order: 1; */
+       /* margin-top: 31.2rem; */
     }
 
-    header .text .arrow {
+    header .text .arrow img {
         margin: 0;
 
-        justify-self: flex-end;
+       /* justify-self: flex-start; */
     }
 
     header .astronaut {
-        order: 2;
+       /* order: 2; */
     }
 
     main {
         grid-template-columns: repeat(3,1fr);
-        grid-template-rows: 1;
+        /* grid-template-rows: 1; */
 
         gap: 6rem;
 
-        padding: 6.4rem 11.1rem 8rem;
+        /* padding: 6.4rem 11.1rem 8rem; */
 
-        max-height: 57.6rem;
+        /* max-height: 57.6rem; */
     }
 
     main h1 {
-        width: 27.9rem;
+        /* width: 27.9rem; */
     }
 
     main p {
-        width: 32,1rem;
+       /* width: 32.1rem; */
     }
 
     .card {
